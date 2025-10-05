@@ -10,27 +10,12 @@
 		711F1F172C2CAD310079B854 /* DETRResnet50SemanticSegmentationF16P8.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 711F1F162C2CAD310079B854 /* DETRResnet50SemanticSegmentationF16P8.mlpackage */; };
 		71E1FD242C12C88A000E93B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E1FD232C12C881000E93B1 /* MainView.swift */; };
 		71E1FD262C12D339000E93B1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E1FD252C12D324000E93B1 /* ViewModel.swift */; };
-		71F286B22C2DE54E0004D109 /* SegmentationModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F286B12C2DE5400004D109 /* SegmentationModelHelper.swift */; };
 		71F286B32C2DE54E0004D109 /* SegmentationModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F286B12C2DE5400004D109 /* SegmentationModelHelper.swift */; };
 		D8C894812BE931A20043DB71 /* SegmentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C894802BE931A20043DB71 /* SegmentationApp.swift */; };
 		D8C894852BE931A30043DB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C894842BE931A30043DB71 /* Assets.xcassets */; };
 		D8C894892BE931A30043DB71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C894882BE931A30043DB71 /* Preview Assets.xcassets */; };
-		D8C894C32BEA8F8E0043DB71 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = D8C894C22BEA8F8E0043DB71 /* ArgumentParser */; };
 		D8C894D12BEAD1230043DB71 /* CoreImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C894D02BEAD0F50043DB71 /* CoreImageExtensions.swift */; };
-		D8C894D22BEAD1230043DB71 /* CoreImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C894D02BEAD0F50043DB71 /* CoreImageExtensions.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D8C894B82BEA8F5E0043DB71 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		44FF279AB9F0BEBC72FDD7A7 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -45,7 +30,6 @@
 		D8C894842BE931A30043DB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8C894862BE931A30043DB71 /* SegmentationApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentationApp.entitlements; sourceTree = "<group>"; };
 		D8C894882BE931A30043DB71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D8C894BA2BEA8F5E0043DB71 /* SegmentationCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SegmentationCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C894D02BEAD0F50043DB71 /* CoreImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,14 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8C894B72BEA8F5E0043DB71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8C894C32BEA8F8E0043DB71 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				D8C8947D2BE931A10043DB71 /* SegmentationApp.app */,
-				D8C894BA2BEA8F5E0043DB71 /* SegmentationCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,26 +139,6 @@
 			productReference = D8C8947D2BE931A10043DB71 /* SegmentationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8C894B92BEA8F5E0043DB71 /* SegmentationCLI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8C894BE2BEA8F5E0043DB71 /* Build configuration list for PBXNativeTarget "SegmentationCLI" */;
-			buildPhases = (
-				D8C894B62BEA8F5E0043DB71 /* Sources */,
-				D8C894B72BEA8F5E0043DB71 /* Frameworks */,
-				D8C894B82BEA8F5E0043DB71 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SegmentationCLI;
-			packageProductDependencies = (
-				D8C894C22BEA8F8E0043DB71 /* ArgumentParser */,
-			);
-			productName = DepthCLI;
-			productReference = D8C894BA2BEA8F5E0043DB71 /* SegmentationCLI */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,9 +153,6 @@
 					D8C8947C2BE931A10043DB71 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					D8C894B92BEA8F5E0043DB71 = {
-						CreatedOnToolsVersion = 16.0;
-					};
 				};
 			};
 			buildConfigurationList = D8C894782BE931A10043DB71 /* Build configuration list for PBXProject "ImageSegmentationDETR" */;
@@ -213,14 +165,12 @@
 			);
 			mainGroup = D8C894742BE931A10043DB71;
 			packageReferences = (
-				D8C894C12BEA8F8E0043DB71 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
 			productRefGroup = D8C8947E2BE931A10043DB71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D8C8947C2BE931A10043DB71 /* SegmentationApp */,
-				D8C894B92BEA8F5E0043DB71 /* SegmentationCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -248,15 +198,6 @@
 				71E1FD242C12C88A000E93B1 /* MainView.swift in Sources */,
 				711F1F172C2CAD310079B854 /* DETRResnet50SemanticSegmentationF16P8.mlpackage in Sources */,
 				D8C894D12BEAD1230043DB71 /* CoreImageExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8C894B62BEA8F5E0043DB71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8C894D22BEAD1230043DB71 /* CoreImageExtensions.swift in Sources */,
-				71F286B22C2DE54E0004D109 /* SegmentationModelHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,36 +406,6 @@
 			};
 			name = Release;
 		};
-		D8C894BF2BEA8F5E0043DB71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C0B8B734E9C9BB26F7D8D61 /* SampleCode.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		D8C894C02BEA8F5E0043DB71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C0B8B734E9C9BB26F7D8D61 /* SampleCode.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,35 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8C894BE2BEA8F5E0043DB71 /* Build configuration list for PBXNativeTarget "SegmentationCLI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8C894BF2BEA8F5E0043DB71 /* Debug */,
-				D8C894C02BEA8F5E0043DB71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D8C894C12BEA8F8E0043DB71 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D8C894C22BEA8F8E0043DB71 /* ArgumentParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D8C894C12BEA8F8E0043DB71 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
-			productName = ArgumentParser;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8C894752BE931A10043DB71 /* Project object */;
 }
