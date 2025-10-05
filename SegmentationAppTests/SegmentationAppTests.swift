@@ -9,15 +9,18 @@
 import Testing
 @testable import SegmentationApp
 
+@MainActor
 struct SegmentationAppTests {
 
     @Test func testMLModelLoading() async throws {
+        let viewModel = ViewModel()
 
-        try await confirmation() { @MainActor confirmation in
-            let viewModel = ViewModel()
+        await confirmation() { confirmation in
             await viewModel.loadModel()
             confirmation()
         }
+
+        #expect(viewModel.isModelLoaded == true)
     }
 
 
