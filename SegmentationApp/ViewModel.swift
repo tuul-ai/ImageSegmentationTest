@@ -259,7 +259,7 @@ private extension ViewModel {
 }
 
 /// A representation of the errors that the view model throws and catches.
-private enum ViewModelError: Int, Error {
+enum ViewModelError: Int, Error {
     case modelNotLoaded = 1
     case noInputImage
     case fileFormatNotSupported

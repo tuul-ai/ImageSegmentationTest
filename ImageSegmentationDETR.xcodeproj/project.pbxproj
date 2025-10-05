@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,16 @@
 		D8C894892BE931A30043DB71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C894882BE931A30043DB71 /* Preview Assets.xcassets */; };
 		D8C894D12BEAD1230043DB71 /* CoreImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C894D02BEAD0F50043DB71 /* CoreImageExtensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E124A0A92E92BB2C006EB402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C894752BE931A10043DB71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C8947C2BE931A10043DB71;
+			remoteInfo = SegmentationApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		44FF279AB9F0BEBC72FDD7A7 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -31,10 +41,22 @@
 		D8C894862BE931A30043DB71 /* SegmentationApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentationApp.entitlements; sourceTree = "<group>"; };
 		D8C894882BE931A30043DB71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8C894D02BEAD0F50043DB71 /* CoreImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageExtensions.swift; sourceTree = "<group>"; };
+		E124A0A52E92BB2C006EB402 /* SegmentationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E124A0A62E92BB2C006EB402 /* SegmentationAppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SegmentationAppTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D8C8947A2BE931A10043DB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E124A0A22E92BB2C006EB402 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +88,7 @@
 				859DBECD75EAF51D2B75BED1 /* README.md */,
 				D8C894CF2BEAD0E70043DB71 /* Common */,
 				D8C8947F2BE931A10043DB71 /* SegmentationApp */,
+				E124A0A62E92BB2C006EB402 /* SegmentationAppTests */,
 				D8C8947E2BE931A10043DB71 /* Products */,
 				323E663B1D0ADDCC60F0EFD9 /* Configuration */,
 				3666B307FEF5770A1B6C8895 /* LICENSE */,
@@ -76,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D8C8947D2BE931A10043DB71 /* SegmentationApp.app */,
+				E124A0A52E92BB2C006EB402 /* SegmentationAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +163,29 @@
 			productReference = D8C8947D2BE931A10043DB71 /* SegmentationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E124A0A42E92BB2C006EB402 /* SegmentationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E124A0AD2E92BB2C006EB402 /* Build configuration list for PBXNativeTarget "SegmentationAppTests" */;
+			buildPhases = (
+				E124A0A12E92BB2C006EB402 /* Sources */,
+				E124A0A22E92BB2C006EB402 /* Frameworks */,
+				E124A0A32E92BB2C006EB402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E124A0AA2E92BB2C006EB402 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E124A0A62E92BB2C006EB402 /* SegmentationAppTests */,
+			);
+			name = SegmentationAppTests;
+			packageProductDependencies = (
+			);
+			productName = SegmentationAppTests;
+			productReference = E124A0A52E92BB2C006EB402 /* SegmentationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,12 +193,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					D8C8947C2BE931A10043DB71 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					E124A0A42E92BB2C006EB402 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = D8C8947C2BE931A10043DB71;
 					};
 				};
 			};
@@ -171,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				D8C8947C2BE931A10043DB71 /* SegmentationApp */,
+				E124A0A42E92BB2C006EB402 /* SegmentationAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +234,13 @@
 			files = (
 				D8C894892BE931A30043DB71 /* Preview Assets.xcassets in Resources */,
 				D8C894852BE931A30043DB71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E124A0A32E92BB2C006EB402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +260,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E124A0A12E92BB2C006EB402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E124A0AA2E92BB2C006EB402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C8947C2BE931A10043DB71 /* SegmentationApp */;
+			targetProxy = E124A0A92E92BB2C006EB402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D8C894A02BE931A40043DB71 /* Debug */ = {
@@ -406,6 +480,53 @@
 			};
 			name = Release;
 		};
+		E124A0AB2E92BB2C006EB402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YJZ43HKVW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathheartcode.SegmentationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SegmentationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SegmentationApp";
+			};
+			name = Debug;
+		};
+		E124A0AC2E92BB2C006EB402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YJZ43HKVW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathheartcode.SegmentationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SegmentationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SegmentationApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +544,15 @@
 			buildConfigurations = (
 				D8C894A32BE931A40043DB71 /* Debug */,
 				D8C894A42BE931A40043DB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E124A0AD2E92BB2C006EB402 /* Build configuration list for PBXNativeTarget "SegmentationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E124A0AB2E92BB2C006EB402 /* Debug */,
+				E124A0AC2E92BB2C006EB402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
