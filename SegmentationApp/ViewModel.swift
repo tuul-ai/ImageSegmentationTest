@@ -89,6 +89,16 @@ final class ViewModel: ObservableObject {
     func selectLabel(at normalizedPosition: CGPoint) {
         selectedLabel = predictedLabel(at: normalizedPosition)
     }
+
+    func handleSelectedImage(_ uiImage: UIImage) {
+        self.inputImage = uiImage
+        self.image = Image(uiImage: uiImage)
+        self.maskedImage = nil
+        self.errorMessage = nil
+        masks = [:]
+
+        performInferenceAndUpdateUI()
+    }
 }
 
 // MARK: - Private
@@ -128,16 +138,6 @@ private extension ViewModel {
         case .failure(let err):
             errorMessage = "Failed to load image: \(err)"
         }
-    }
-
-    func handleSelectedImage(_ uiImage: UIImage) {
-        self.inputImage = uiImage
-        self.image = Image(uiImage: uiImage)
-        self.maskedImage = nil
-        self.errorMessage = nil
-        masks = [:]
-
-        performInferenceAndUpdateUI()
     }
 
     func performInferenceAndUpdateUI() {
